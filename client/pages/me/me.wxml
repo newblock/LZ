@@ -1,0 +1,92 @@
+<!--pages/me/me.wxml-->
+<view style='overflow-x:hidden'>
+
+  <view class='backTitle'>
+    <view class='userInfo' wx:if='{{!isLogin}}'>
+      <image class='userHead' src='../../res/icon2/未登录头像.png'></image>
+      <view class='userName'>
+        <text>未登录</text>
+      </view>
+      <view>
+        <text class='userTip'></text>
+      </view>
+    </view>
+
+    <view class='userInfo' wx:if='{{isLogin}}'>
+      <image class='userHead' src='{{userInfo.avatarUrl}}'></image>
+      <view class='userName'>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      <view>
+        <text>{{welMsg}}</text>
+      </view>
+    </view>
+  </view>
+
+  <button wx:if='{{!isLogin}}' type='primary' style='margin-top:2rpx; width:95%;' open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+
+  <view class='space40'>
+  </view>
+
+<!--
+  <view class='listview' style='height: {{adList.length*120}}rpx;'>
+    <view class='cell' wx:for='{{adList}}' wx:key='{{index}}' bindtap='{{item.func}}'>
+      <view class='item1'>
+        <image class='icon' src='{{item.icon}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='item2'>
+        <text>{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='space100'>
+  </view>
+
+  <view class='listview' style='height: {{courseList.length*120}}rpx;'>
+    <view class='cell' wx:for='{{courseList}}' wx:key='{{index}}' bindtap='{{item.func}}'>
+      <view class='item1'>
+        <image class='icon' src='{{item.icon}}'></image>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='item2'>
+        <text>{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+-->
+
+  <view class='listview' style='height: 120rpx;'>
+    <view class='cell' bindtap='pressConfig'>
+      <view class='item1'>
+        <image class='icon' src='../../res/icon2/雪人.png'></image>
+        <view class='spaceItem'></view>
+        <text>设置</text>
+      </view>
+      <view class='item2'>
+        <text></text>
+      </view>
+    </view>
+  </view>
+
+  <!--(VIP学员显示)-->
+  <view class='cell' wx:if='{{isVIP}}'>
+    <button open-type='contact' type='default' style='width:100%;height:100%;margin-top:0rpx;'>微信班主任</button>
+  </view>
+  <view class='space100'>
+  </view>
+
+
+<!--
+  <view>
+    <image class='feature' src='../../img/职业规划发展.png' bindtap='loadFuture'></image>
+  </view>
+
+  <view class='space100'>
+  </view>
+
+  <button wx:if='{{isLogin}}' type='default' style='margin-top:2rpx;'>退出登录</button>
+  -->
+
+</view>

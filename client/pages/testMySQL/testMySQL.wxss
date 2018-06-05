@@ -1,0 +1,31 @@
+/* pages/test/testMySQL.wxss */
+
+
+view.content
+{
+   width:96%;
+   margin-left: 20rpx;
+}
+
+image.salary
+{
+  width:100%;
+  margin-top: 20rpx;
+  margin-left: -2rpx ;
+  margin-bottom: 10rpx;
+  border-radius: 20rpx ;
+}
+
+.tCourse
+{
+  padding-left: 0rpx ;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+text.text
+{
+  padding-left: 30rpx ;
+  font-size: 14px;
+  font-weight: normal;
+}

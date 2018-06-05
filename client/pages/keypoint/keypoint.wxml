@@ -1,0 +1,18 @@
+<!--pages/keypoint/keypoint.wxml-->
+<view style='margin-top:10rpx; text-align:center'>
+  <text class='tCourse'>{{title}}</text>
+</view>
+
+<view class = 'content' style='margin-top:10rpx; '>
+  <image class = 'salary' style=' height: 400rpx ; background-image:url(../../res/img/B1_1280.jpg)' src='{{imgurl}}'></image>
+</view>
+
+<view class = 'content' style='margin-top:10rpx; '>
+  <text class='text'>
+  {{text}}
+  </text>
+</view>
+
+<view class = 'content' style='margin-top:10rpx; '>
+  <image class = 'salary' style=' height: 440rpx ; ' src='../../res/img/B1_1280.jpg'></image>
+</view>

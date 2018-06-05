@@ -1,0 +1,124 @@
+/* pages/me/me.wxss */
+
+.backTitle
+{
+  width: 100%;
+  height: 380rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22rpx;
+  background-color: #ffffff ;
+  margin-bottom: 15rpx;
+}
+
+.userInfo
+{
+  width: 95%;
+  height: 360rpx;
+  background-color: #00A2E8;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #9a2c2e;
+  font-weight: bold;
+  padding-top: 25rpx;
+  padding-bottom: 20rpx ;
+}
+
+.userHead
+{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.userName
+{
+  margin-top: 0rpx ;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+.userTip
+{
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+.listview
+{
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rpx;
+  margin-left: 8rpx;
+  background-color: #ffffff ;
+}
+
+.cell
+{
+  width: 100%;
+  height: 116rpx ;
+  background-color: #eeeeee ;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px ;
+  font-size:  18px;
+  border-radius: 10rpx ;
+}
+
+.item1
+{
+  width: 80%;
+  height: 100% ;
+  margin-left: 35rpx ;
+  padding-top: 0rpx ;
+  background-color: #eeeeee ;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon
+{
+  width: 60rpx ;
+  height: 60rpx ;
+  margin-right: 15rpx ;
+}
+
+
+image.feature
+{
+  width:95%;
+  height: 394rpx ;
+  margin-top: 10rpx;
+  margin-left: 20rpx ;
+  margin-bottom: 30rpx;
+  border-radius: 20rpx ;
+}
+
+view.spaceItem
+{
+   width: 37%;
+}
+
+.space40
+{
+  width: 100%;
+  height: 40rpx;
+  background-color: #ffffff ;
+}
+
+.space100
+{
+  width: 100%;
+  height: 100rpx;
+  background-color: #ffffff ;
+}

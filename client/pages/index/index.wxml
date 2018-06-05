@@ -1,0 +1,38 @@
+<!--index.wxml
+
+<image class = 'ad01' src='' bindtap='loadAd'></image>
+-->
+
+<view style='overflow-x:hidden'>
+  <view style='margin-top:15rpx; margin-left:40rpx; text-align:left'>
+    <text class='tTitle'></text>
+  </view>
+
+  <view class='all' style='height: {{maxHeigth}}rpx '>
+       <!--
+    <text class='errorTip' wx:if='{{artList.length==0}}'>服务器暂时停止服务啦，稍后再试哈！</text>
+    -->
+    <view class='item'  wx:for='{{artList}}' wx:key='{{index}}' 
+    id = '{{item.id}}' bindtap='gotoCourse'>
+
+      <image class='cImg' src='{{item.imgurl}}'></image>
+
+       <!--
+      <video class="cImg" src="http://1251734487.vod2.myqcloud.com/9aff3f89vodgzp1251734487/b6f4acee7447398155451513629/EerFsUPIYUQA.mp4" controls >
+      </video>
+      -->
+      <view class='vTitle'>
+        <text class='tCourse'>{{item.title}}</text>
+      </view>
+   <!--
+      <view>
+     <text class='price'>¥99</text>
+    </view>
+    -->
+
+    </view>
+  </view>
+  <!--
+  <button bindtap='testRedDot'>测试红点</button>
+  -->
+</view>

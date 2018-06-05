@@ -1,0 +1,32 @@
+<!--pages/me/config/config.wxml-->
+<view style='overflow-x:hidden'>
+
+  <view class='backTitle'>
+    <view class='userInfo' wx:if='{{!isLogin}}'>
+      <image class='userHead' src='../../../res/icon2/未登录头像.png'></image>
+      <view class='userName'>
+        <text>未登录</text>
+      </view>
+      <view>
+        <text class='userTip'></text>
+      </view>
+    </view>
+
+    <view class='userInfo' wx:if='{{isLogin}}'>
+      <image class='userHead' src='{{userInfo.avatarUrl}}'></image>
+      <view class='userName'>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      <view>
+        <text></text>
+      </view>
+    </view>
+  </view>
+
+  <view class='space100'>
+  </view>
+
+  <button bindtap='clearStorage' type='default' style='margin-top:2rpx; width:95%;'>清空缓存</button>
+  <button bindtap='logout' type='default' style='margin-top:2rpx; width:95%;'>退出登录</button>
+
+</view>

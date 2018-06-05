@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/me/config/config",
+    "pages/logs/logs",
+    "pages/keypoint/keypoint",
+    "pages/testMySQL/testMySQL"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "链之",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#00A2E8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "区块链",
+        "iconPath": "res/icon/plus_g_250.png",
+        "selectedIconPath": "res/icon/plus_250_blue.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "res/icon/head_g_250.png",
+        "selectedIconPath": "res/icon/head_250_blue.png"
+      }
+    ]
+  }
+}
